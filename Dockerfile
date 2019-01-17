@@ -156,7 +156,6 @@ COPY nginx.vh.default.conf /etc/nginx/conf.d/default.conf
 
 #START
 RUN chmod 0777 /run; chmod 0777 /var/cache/nginx;
-RUN apk add curl;
 #END
 
 EXPOSE 80
