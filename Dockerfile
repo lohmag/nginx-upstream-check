@@ -155,7 +155,7 @@ COPY nginx.conf /etc/nginx/nginx.conf
 COPY nginx.vh.default.conf /etc/nginx/conf.d/default.conf
 
 #START
-RUN chmod 0777 /run; chmod 0777 /var/cache/nginx;
+RUN chmod -R 777 /run; chmod -R 777 /var/cache/nginx;
 #END
 
 EXPOSE 80
